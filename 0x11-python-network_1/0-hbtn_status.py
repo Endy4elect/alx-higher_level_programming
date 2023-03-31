@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""Fetches https://alx-intranet.hbtn.io/status."""
 import urllib.request
 
 url = 'https://alx-intranet.hbtn.io/status'
@@ -9,4 +10,3 @@ with urllib.request.urlopen(url) as response:
     print('\t- type:', type(body))
     print('\t- content:', body)
     print('\t- utf8 content:', body.decode('utf-8'))
-
